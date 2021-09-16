@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="srv_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://img.icons8.com/dusk/64/000000/survey.png" type="image/x-icon"/>
+    <script src="form.js"></script>
+    <title>Quizz - Programming Survey</title>
+</head>
+<body>
+    <div id="container">
+      <h1 id="title">
+        Quick Programming Survey
+      </h1>
+      <p id="description">Take quick survey about programming</p>
+        
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email adress" required />
+         </div>
+        <div class="form-group">
+            <label id="age-label">Age</label>
+              <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age" required />
+        </div>
+        <div class="form-group">
+        <fieldset> 
+          <legend style="font-size: 20px;">Gender</legend>
+          <label for="male">
+          <input type="radio" name="gender" id="male" value="male"/>Male</label>
+          <label for="female">
+          <input type="radio" name="gender" id="female" value="female"/>Female</label>
+        </fieldset>
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="notSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+          <div class="form-group">
+            <p>Would you recommend this survey to a friend?</p>
+            <label for="definitely">
+            <input type="radio" name="recommend" value="definitely" class="radio-input" checked/>
+                Definitely</label>
+            <label for="maybe">
+              <input type="radio" name="recommend" value="maybe" class="radio-input"/>
+                Maybe</label>
+              <label for="not-sure">
+              <input type="radio" name="recommend" value="not-sure" class="radio-input"/>
+              Not Sure</label>
+          </div>
+          <div class="form-group">
+            <p>What learning platform would you prefer?</p>
+            <select id="dropdown" name="most-like" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="university">University (Get a Degree)</option>
+              <option value="online">Online Courses</option>
+              <option value="offline">Offline Courses (Intern Programs,Trainigs,etc...)</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              What is your passion in Programming? (Choose max 3):
+            </p>
+              <label>
+                <input style="margin-top:10px;" name="prefer" value="creation" type="checkbox" 
+                class="input-checkbox"/>Create New Inovations 💡</label>
+              <label>
+                 <input name="prefer" value="perspective" type="checkbox" 
+                 class="input-checkbox"/>Perspective Future &#129302</label>
+              <label>
+                 <input name="prefer" value="salary" type="checkbox" 
+                 class="input-checkbox"/>Salary &#128184</label>
+              <label>
+                 <input name="prefer" value="challenges" type="checkbox" 
+                 class="input-checkbox"/>Constant Challenges &#128170</label>
+              <label>
+                 <input name="prefer" value="coding" type="checkbox" 
+                 class="input-checkbox"/>Coding! &#128157</label>
+              <label>
+                 <input name="prefer" value="problems" type="checkbox" 
+                 class="input-checkbox"/>Solving Problems &#128295</label>
+              <label>
+                <input name="prefer" value="debugging" type="checkbox" 
+                class="input-checkbox"/>Debugging 🐞</label>
+              <label>
+                 <input name="prefer" value="develop-all-the-time" type="checkbox" 
+                 class="input-checkbox"/>Ability to Develop All The Time &#128200</label>
+              <label>
+                 <input name="prefer" value="city-meetups" type="checkbox" 
+                 class="input-checkbox"/>Other (Write down in the comment section) ⬇</label>             
+           </div>
+           <div class="form-group" id="fav-langs">
+            <fieldset > 
+              <legend style="font-size: 1rem;">What is your favorite Programming/Scipting/Mark Up language? (fun question):</legend>
+              <label for="py">
+                <input type="checkbox" class="languages" id="py" value="py" />Python &#128013</label>
+              <label for="java">
+                <input type="checkbox" class="languages" id="java" value="java"/>Java &#9749</label>
+              <label for="html">
+                <input type="checkbox" class="languages" id="html" value="html"/>HTML &#128308</label>     
+              <label for="css">
+                <input type="checkbox" class="languages" id="css" value="css"/>CSS &#128309</label>               
+              <label for="js">  
+                <input type="checkbox" class="languages" id="js" value="js"/>JavaScript &#128993</label>
+              <label for="cpp">
+                <input type="checkbox" class="languages" id="cpp" value="cpp" />C/C++ &#10133</label>
+              <label for="csharp">
+                <input type="checkbox" class="languages" id="csharp" value="csharp" />C# &#128126</label>
+              <label for="go">
+                <input type="checkbox" class="languages" id="go" value="go" />Go &#127744</label>
+              <label for="php">
+                <input type="checkbox" class="languages" id="php" value="php"/>PHP &#128024</label>
+              <label for="Kotlin">
+                <input type="checkbox" class="languages" id="kotlin" value="kotlin"/>Kotlin &#128310</label>
+              <label for="r">
+                <input type="checkbox" class="languages" id="r" value="r"/>R &#128313</label>
+              <label for="swift">
+                <input type="checkbox" class="languages" id="swift" value="swift"/>Swift &#128038</label>
+              <label for="obj-c">
+                <input type="checkbox" class="languages" id="obj-c" value="obj-c"/>Objective-C &#127823</label>
+              <label for="ruby">
+                <input type="checkbox" class="languages" id="ruby" value="ruby"/>Ruby &#9830</label>
+              <label for="ts">
+                <input type="checkbox" class="languages" id="ts" value="ts"/>TypeScript &#128998</label>
+              <label for="matlab">
+                <input type="checkbox" class="languages" id="matlab" value="matlab"/>Matlab &#128200</label>
+              <label for="bf">
+                <input type="checkbox" class="languages" id="bf" value="bf"/>BrainF &#129504</label>
+                <label for="ps">
+                  <input type="checkbox" class="languages" id="ps" value="ps"/>Pascal &#128208</label>
+              <label for="perl">
+                <input type="checkbox" class="languages" id="perl" value="perl"/>Perl &#128043</label>
+              <label for="lua">
+                <input type="checkbox" class="languages" id="lua" value="lua"/>Lua &#127761</label>
+              <label for="rust">
+                <input type="checkbox" class="languages" id="rust" value="rust"/>Rust &#129408</label>
+              <label for="etc">
+                <input type="checkbox" class="languages" id="etc" value="etc"/>Other &#63</label>
+            </fieldset>
+           </div>
+            <div class="form-group">
+              <p id="text-p">Any comments or suggestions?</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+              </div>
+          <div class="form-group">
+            <button type="button" id="submit" class="submit-button">Submit</button>
+          </div>
+         </form>
+
+    <footer>
+      <div class="socials">
+        <a id="insta" href="https://www.instagram.com/j_matsaberidze/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a id="fb" href="https://www.facebook.com/jubiko.macaberidze" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a id="linkin" href="https://www.linkedin.com/in/jubiko-matsaberidze-7b66a7204/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a id="git" href="https://github.com/Jubiko31" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+    </div>  
+</body>
+</html>
